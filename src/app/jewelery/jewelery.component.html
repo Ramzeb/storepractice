@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="header">
+        <h1>JOYERÍA</h1>
+    </div>
+    <div class="products">
+        <div *ngFor="let item of data">
+            <div class="product">
+                <div class="image">
+                    <img src="{{item.image}}" />
+                </div>
+
+                <div class="namePrice">
+                    <h3>{{item.title}}</h3>
+                    <span>{{item.price}} Bs.</span>
+                </div>
+                <!--
+                <p>{{item.description}}</p>-->
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="bay">
+                    <button> Detalles </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
